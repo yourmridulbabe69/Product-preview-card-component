@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+}
+
+.phoneimg {
+    display: none;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 9% 22%; */
+    height: 650px;
+    width: 690px;
+    margin: 0px auto;
+}
+
+.img {
+    height: 390px;
+}
+
+.picture {
+    width: 260px;
+    border: none;
+    border-radius: 12px 0px 0px 12px;
+    box-shadow: 20px 20px 15px rgba(0, 0, 0, 0.3);
+}
+
+.content {
+    width: 260px;
+    height: 390px;
+    background-color: hsl(0, 0%, 100%);
+    padding: 3%;
+    border: none;
+    border-radius: 0px 12px 12px 0px;
+    box-shadow: 20px 20px 15px rgba(0, 0, 0, 0.3);
+}
+
+.like {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin: 5px;
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.heading {
+    font-size: 2rem;
+    margin: 15px 0px;
+    color: hsl(212, 21%, 14%);
+    font-family: 'Fraunces', serif;
+}
+
+.subheading {
+    font-size: 13px;
+    line-height: 1.5;
+    color: hsl(228, 12%, 48%);
+    margin-bottom: 15px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.price {
+    font-family: 'Fraunces', serif;
+    color: hsl(158, 36%, 37%);
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.mainprice {
+    color: hsl(158, 36%, 37%);
+    font-size: .8rem;
+    margin: 11px;
+    position: relative;
+    bottom: 4px;
+}
+
+hr {
+    width: 34px;
+    color: hsl(228, 12%, 48%);
+    position: relative;
+    left: 136px;
+    bottom: 15px;
+    border-bottom: none;
+}
+
+.btn {
+    display: block;
+    padding: 11px 48px;
+    border: none;
+    background: hsl(158, 36%, 37%);
+    border-radius: 8px;
+    color: hsl(0, 0%, 100%);
+    margin-top: 15px;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+}
+
+.btn img {
+    position: relative;
+    top: 3px;
+}
+
+.btn:hover {
+    background: hsl(212, 21%, 14%);
+    background-image: -webkit-linear-gradient(left, hsl(212, 21%, 14%), hsl(158, 36%, 37%));
+    background-image: -moz-linear-gradient(top, hsl(212, 21%, 14%), hsl(158, 36%, 37%));
+    background-image: -ms-linear-gradient(left, hsl(212, 21%, 14%), hsl(158, 36%, 37%));
+    background-image: -o-linear-gradient(left, hsl(212, 21%, 14%), hsl(158, 36%, 37%));
+    background-image: linear-gradient(to right, hsl(212, 21%, 14%), hsl(158, 36%, 37%));
+    text-decoration: none;
+}
+
+
+/* ----------------------------------------------------------- */
+
+@media only screen and (max-width: 420px) {
+    .picture {
+        display: none;
+    }
+
+    .phoneimg {
+        display: block;
+        width: 288px;
+        border: none;
+        border-radius: 12px 12px 0px 0px;
+
+    }
+
+    .img {
+        height: auto;
+    }
+
+    .item {
+        display: flex;
+        flex-direction: column;
+
+        width: 80%;
+        margin: 12px auto;
+
+    }
+
+    .content {
+        width: 288px;
+        height: 360px;
+        border: none;
+        border-radius: 0px 0px 12px 12px;
+        box-shadow: none;
+
+    }
+
+    .heading {
+        font-size: 1.5rem;
+    }
+
+    .subheading {
+        font-size: 15px;
+    }
+}
