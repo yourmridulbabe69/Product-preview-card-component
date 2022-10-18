@@ -9,6 +9,9 @@
 
 body {
     background-color: hsl(30, 38%, 92%);
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
 }
 
 .phoneimg {
@@ -19,9 +22,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* padding: 9% 22%; */
-    height: 650px;
-    width: 690px;
     margin: 0px auto;
 }
 
